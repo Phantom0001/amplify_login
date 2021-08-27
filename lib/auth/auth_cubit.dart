@@ -18,9 +18,9 @@ class AuthCubit extends Cubit<AuthState> {
   void showSignUp() => emit(AuthState.signUp);
 
   void showConfirmSignUp({
-    required String? username,
-    required String? email,
-    required String? password,
+    required String username,
+    required String email,
+    required String password,
   }) {
     credentials = AuthCredentials(
       username: username,

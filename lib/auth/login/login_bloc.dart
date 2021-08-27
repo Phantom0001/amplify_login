@@ -7,7 +7,7 @@ import '../form_submissions_status.dart';
 import 'login_event.dart';
 import 'login_state.dart';
 
-class LoginBloc extends Bloc<LoginEvent, LoginState>{
+class LoginBloc extends Bloc<LoginEvent, LoginState> {
   final AuthRepository? authRepo;
   final AuthCubit? authCubit;
 
@@ -16,19 +16,23 @@ class LoginBloc extends Bloc<LoginEvent, LoginState>{
   @override
   Stream<LoginState> mapEventToState(LoginEvent event) async* {
     // update username
-    if(event is LoginUsernameChanged){
+    if (event is LoginUsernameChanged) {
       yield state.copyWith(username: event.username);
-    }
-    else if(event is LoginPasswordChanged){
+    } else if (event is LoginPasswordChanged) {
       yield state.copyWith(password: event.password);
-    }
-    else if(event is LoginSubmitted){
+    } else if (event is LoginSubmitted) {
       yield state.copyWith(formStatus: FormSubmitting());
 
       try{
-        await authRepo?.login(username: state.username, password: state.password);
+        final userId = await authRepo?.login(
+          username: state.username,
+          password: state.password,
+        );
         yield state.copyWith(formStatus: SubmissionSuccess());
-        authCubit?.launchSession(AuthCredentials(username: state.username));
+        authCubit?.launchSession(AuthCredentials(
+          username: state.username,
+          userId: userId,
+        ));
       }catch(e){
         yield state.copyWith(formStatus: SubmissionFailed(e));
       }

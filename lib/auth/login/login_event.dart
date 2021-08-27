@@ -17,4 +17,8 @@ class LoginPasswordChanged extends LoginEvent{
 }
 
 // Going to take the event that will map to the state
-class LoginSubmitted extends LoginEvent{}
+class LoginSubmitted extends LoginEvent{
+
+
+
+}

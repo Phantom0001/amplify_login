@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-questboard-staging-184716-authRole",
+      "UnauthRoleArn": "arn:aws:iam::883637510436:role/amplify-questboard-staging-184716-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::883637510436:role/amplify-questboard-staging-184716-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-questboard-staging-184716-deployment",
+      "UnauthRoleName": "amplify-questboard-staging-184716-unauthRole",
+      "StackName": "amplify-questboard-staging-184716",
+      "StackId": "arn:aws:cloudformation:us-east-1:883637510436:stack/amplify-questboard-staging-184716/33acc7b0-0767-11ec-aeee-0e2697a4acd1",
+      "AmplifyAppId": "d2ia61j7p8yh90"
+    },
+    "categories": {
+      "auth": {
+        "questboarddedbfc34": {}
+      }
+    }
+  }
+}
