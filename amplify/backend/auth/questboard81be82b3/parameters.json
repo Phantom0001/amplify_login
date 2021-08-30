@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "questboarddedbfc34_identitypool_dedbfc34",
+    "identityPoolName": "questboard81be82b3_identitypool_81be82b3",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "questbdedbfc34",
-    "userPoolName": "questboarddedbfc34_userpool_dedbfc34",
+    "resourceNameTruncated": "questb81be82b3",
+    "userPoolName": "questboard81be82b3_userpool_81be82b3",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "questbdedbfc34_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "questb81be82b3_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "dedbfc34",
-    "resourceName": "questboarddedbfc34",
+    "sharedId": "81be82b3",
+    "resourceName": "questboard81be82b3",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [

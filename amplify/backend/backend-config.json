@@ -22,7 +22,7 @@
     }
   },
   "auth": {
-    "questboarddedbfc34": {
+    "questboard81be82b3": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
