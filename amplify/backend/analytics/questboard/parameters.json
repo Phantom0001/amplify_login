@@ -1,0 +1,21 @@
+{
+    "appName": "questboard",
+    "roleName": "pinpointLambdaRoleef5b7456",
+    "cloudformationPolicyName": "cloudformationPolicyef5b7456",
+    "cloudWatchPolicyName": "cloudWatchPolicyef5b7456",
+    "pinpointPolicyName": "pinpointPolicyef5b7456",
+    "authPolicyName": "pinpoint_amplify_ef5b7456",
+    "unauthPolicyName": "pinpoint_amplify_ef5b7456",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

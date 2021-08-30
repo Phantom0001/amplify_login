@@ -1,6 +1,6 @@
 {
     "identityPoolName": "questboard81be82b3_identitypool_81be82b3",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "questb81be82b3",
     "userPoolName": "questboard81be82b3_userpool_81be82b3",
     "autoVerifiedAttributes": [

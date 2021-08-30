@@ -44,5 +44,11 @@
         ]
       }
     }
+  },
+  "analytics": {
+    "questboard": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
